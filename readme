@@ -1,0 +1,19 @@
+#Image Service Api Example
+
+this allow to resize the photo in realtime to the desired size
+
+++ less bandwidth consumption
+
+-/+ need to be used on a cloud server
+
+Requirement:
+
+- Node Js
+- GM ( https://github.com/aheckmann/gm )
+
+
+the url :
+
+	http://localhost:3000/image?width=2000&heigh=2000
+
+the node js app resize the image to 2000x2000px

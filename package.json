@@ -1,0 +1,11 @@
+{
+  "name": "imageapi",
+  "version": "0.0.0",
+  "description": "image service api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damien Galan",
+  "license": "ISC"
+}
