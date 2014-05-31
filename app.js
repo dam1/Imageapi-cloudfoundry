@@ -4,12 +4,10 @@ var fs = require('fs')
 
 var app = module.exports = express();
 
-app.configure(function(){
- app.use(app.router);
-});
-
 app.get('/image', function(req, res){
 
+ console.log('resizing image to :');
+ console.log(req.query );
 
  gm('DSC03282.JPG')
   .resize(req.query.width, req.query.height)
@@ -19,7 +17,7 @@ app.get('/image', function(req, res){
    res.writeHead(200, {'Content-Type': 'image/jpeg' });
    res.end(buffer, 'binary');
 
-   console.log('image send : ' +req.query);
+   console.log('image send !' );
 
   });
 });
