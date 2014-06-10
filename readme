@@ -1,19 +1,26 @@
-#Image Service Api Example
+#Image Image Api
 
-this allow to resize the photo in realtime to the desired size
+Tuto : http://ibmbluemix.blogspot.com/2014/06/create-your-own-cloud-image-api.html
 
-++ less bandwidth consumption
+Links
 
--/+ need to be used on a cloud server
+heroku-buildpack-graphicsmagick : https://github.com/mcollina/heroku-buildpack-graphicsmagick
+heroku-buildpack-multi : https://github.com/ddollar/heroku-buildpack-multi
+image resize library for node Js : https://github.com/aheckmann/gm
 
 Requirement:
 
-- Node Js
-- GM ( https://github.com/aheckmann/gm )
+this article : http://ibmbluemix.blogspot.com/2014/05/tips-if-you-have-problem-to-publish.html
+the custom buildpack : https://github.com/dam1/cloudfoundry-custom
+the demo : https://github.com/dam1/Image-Service-Api-Example---Node-Js
 
+Tuto:
 
-the url :
+git clone git@github.com:dam1/Image-Service-Api-Example---Node-Js.git
 
-	http://localhost:3000/image?width=2000&heigh=2000
+cf push cloudimageapi --no-manifest  -b git://github.com/dam1/cloudfoundry-custom.git
 
-the node js app resize the image to 2000x2000px
+"-b git://github.com/da..." let us choose a custom buildpacks
+
+try http://cloudimageapi.ng.bluemix.net/image?width=400&height=300
+
