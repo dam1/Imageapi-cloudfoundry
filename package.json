@@ -1,11 +1,15 @@
 {
-  "name": "imageapi",
-  "version": "0.0.0",
-  "description": "image service api",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "cloud-image-api",
+  "version": "0.0.2",
+  "engines": {
+    "node": "0.8.x"
   },
-  "author": "Damien Galan",
-  "license": "ISC"
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~3.3.8",
+    "gm": "*",
+    "fs": "*"
+  }
 }
